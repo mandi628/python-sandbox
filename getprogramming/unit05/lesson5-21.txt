@@ -1,0 +1,96 @@
+# Get Programming: Learn to Code with Python, by Ana Bell
+# borrowed from library 2024.07.05
+
+# Unit 5: Organizing Your Code into Reuseable Blocks
+# Lesson 21: Achieveing Modularity and Abstraction with Functions
+
+# NOTE: Lesson 20 did not have any assignments; it was introducing
+#    the concept of functions.
+
+# When writing a function, you have to think about three things:
+#    ~ What input the function takes in
+#    ~ What operations/calculations the function does
+#    ~ What the function returns
+
+def take_attendance(classroom, who_is_here): #Function definition
+    """
+    classroom, tuple
+    who_is_here, tuple
+    Checks if every item in classroom is in who_is_here
+    And prints their name if so.
+    Returns "finished taking attendance"
+    """
+    for kid in classroom: # Loops over every student in class
+        if kid in who_is_here: # Checks whether the student is also in the who_is_here tuple
+            print(kid) # Prints the name of the kids who's here
+    return "finished taking attendance" # Returns a string
+
+print("Quick check 21.1")
+# Write a line to define functions with the following specifications
+# 1) A function named set_color that takes in two inputs: a string named name (representing the name of an object) and a string names color (representing the name of a color)
+def set_color(name, color):
+# 2) A function named get_inverse that takes in one input: a number named num
+def get_inverse(num):
+# 3) A function named print_my_name that doesn't take in any inputs
+def print_my_name():
+
+print("Quick check 21.2")
+def func_1(one, two three): takes 3 parameters/arguments
+def func_2(): takes 0 parameters
+def func_3(head, shoulders, knees, toes): takes 4 parameters
+
+print("Quick check 21.3")
+# Are the following function written without errors?
+def func_1(one, two, three):
+    if one == two + three:
+        print("equal")
+Yes, as long as two and three are elements that can be added together
+def func_2():
+    return(True and True)
+Yes
+def func_3(head, shoulders, knees):
+return "and toes"
+No - missing indentation
+
+print("Quick check 21.3")
+#Come up with an appropriate name for functions that do each of the following
+1. A function that tell you the age of a tree
+def tree_age():
+2. A function that translates what your dog is saying
+def dog_translator():
+3. A function that takes a picture of a cloud and tells you the closest animal it resembles
+def cloud_animals():
+4. A function that shows you what you'll look like in 50 years
+def 50_yrs_future():
+
+Function to tell you the length of the sum of two strings
+def get_word_lenth(word1, word2):
+    word = word1 + word2
+    return len(word)
+    print("this never gets printed") # Nothing after the return statement is executed
+
+print("Quick check 21.4")
+# What does each function return? What is the type of the return variable?
+1. def func_1(sign):
+    return len(sign) # It would return the length of the string designated as sign
+2. def func_2():
+    return (True and True) # Return the Boolean value of True
+3. def func_3(head, shoulders, knees):
+    return("and toes") # It would return the string "and toes"
+
+print("Section 21.3 - Documenting your fuctions")
+docstrings are abstractions of your functions
+
+def take_attendance(classroom, who_is_here):
+    """
+    classroom, tubple of strings
+    who_is_here, tuple of strings
+    Prints the names of all kids in class who are also in who_is_here
+    Returns a string, "finished taking attendance"
+    """
+
+A docstring starts inside the function, indented. The triple quotes denote the start and end
+of the docstring. A docstring includes the following:
+-- Each input parameter name and type
+-- A brief overview of what the function does
+-- The meaning of the return value and the type
