@@ -1,0 +1,28 @@
+The Problem:
+
+Write a program that reads input from a file in a specific format, regarding all your friends' names and phone numbers.
+Your program should store that information and analyze it in some way. For example, you can show the user where their
+friends live based on the area code of the phone numbers, and the number of states where they live.
+
+read_file function will assume the data is in the following format:
+
+Friend 1 name
+Friend 1 phone number
+Friend 2 name
+Friend 2 phone number
+<and so on>
+
+** because each piece of information is on a separate line, your program will have a newline character as the final
+   character of each line
+
+You can have Python read the file and store every other line in a tuple, starting with the first (group all names
+together), then read every other line, starting with the second, and store as another tuple for the phone numbers.
+
+** to remove \n from a string, use the following:
+
+word = "bird\n"
+print(word)
+word = word.replace("\n", "") # This replaces the newline character with nothing
+print(word)
+
+** alternative to word.replace() is word.strip("\n")
