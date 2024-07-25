@@ -11,3 +11,11 @@ print("Challenge 042")
 # If they do not want it included, don't add it to the toal. After they have entered all
 # five numbers, display the total.
 
+total = 0
+
+for i in range(0,5):
+    num = int(input("Enter a number: "))
+    ans = input("Do you want this number include? (y/n) ")
+    if ans == "y":
+        total = total + num
+print(total)
