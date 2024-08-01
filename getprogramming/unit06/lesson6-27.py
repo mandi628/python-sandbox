@@ -82,3 +82,50 @@ print("Remove pi:", constants.pop("pi"), "\n", constants)
 print("Remove pyth:", constants.pop("pyth"), "\n", constants)
 print("Remove i: Key error 'i'")
 print(constants)
+
+print("\n~~~~~~~~\n")
+
+print("Listing 27.3")
+grades = {} # Sets up the dictionary mapping a string to a list of the two quiz scores
+grades["Chris"] = [100, 70]
+grades["Angela"] = [90, 100]
+grades["Bruce"] = [80, 40]
+grades["Stacey"] = [70, 70]
+print("The initial dictionary:", grades)
+
+for student in grades.keys(): # Iterates through keys and prints them
+    print(student)
+
+for quizzes in grades.values(): # Iterates through values and prints their average
+    print(sum(quizzes)/2)
+
+for student in grades.keys(): # Iterates through all keys
+    scores = grades[student] # Takes scores of each student and assigns them to the scores variable for average calculation in the next line
+    grades[student].append(sum(scores)/2) # Takes the average of the elements and appends it to the end of the list
+print(grades)
+
+print("--------")
+
+print("QC 27.5")
+employees = {"John": 34, "Mary": 24, "Erin": 50}
+for em in employees.keys():
+    employees[em] += 1
+for em in employees.keys():
+    print(employees[em])
+print(employees)
+
+print("\n~~~~~~~~\n")
+
+print("Listing 27.4 - Building a Frequency Dictionary")
+
+lyrics = "Happy birthday to you Happy birthday to you Happy birthday dear you Happy birthday to you" #string of song lyrics
+counts = {} # Empty frequency dictionary
+
+words = lyrics.split(" ") # Splits the string and creates a list
+for w in words: # Iterates through the words
+    w = w.lower() # Makes the words lowercase
+    if w not in counts: # Checks if it's in the list
+        counts[w] = 1 # If not, it adds it to the list
+    else: # Otherwise...
+        counts[w] += 1 # It increases the count by one
+print(counts)
