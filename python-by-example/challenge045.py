@@ -3,19 +3,25 @@
 # Python by Example, by Nichola Lacey
 # borrowed from library 2024.07.05
 
-# Chapter 5: For Loop
+# Chapter 6: While Loop
 
-print("Challenge 044")
-# Ask how many people the user wants to invite to a party. If they enter a number below 10,
-# ask for the names and after each name display "[name] has been invited." If they enter a
-# number which is 10 or higher, display the message "Too many people."
+# Example
+#total = 0
+#while total < 100:
+#    num = int(input("Enter a number: "))
+#    total = total + num
+#print("The total is", total)
 
-ppl = int(input("How many people do you want to invite to a party? "))
+print("Challenge 045")
 
-if ppl < 10:
-    for i in range(0, ppl):
-        name = input("Enter a person's name: ")
-        print(name, "has been invited.\n")
-    print("Have fun at the party!!!")
-elif ppl >= 10:
-    print("Too many people.")
+# Set the total to 0 to start with. While the total is 50 or less, ask
+# the user to input a number. Add that number to the total and print
+# the message "The total is...[total]". Stop the loop when the
+# total is over 50.
+
+total = 0
+while total <= 50:
+    num = int(input("Enter a number: "))
+    total = total + num
+    print("The total is...", total)
+print("    You have passed the limit.")

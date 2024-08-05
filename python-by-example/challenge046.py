@@ -3,19 +3,15 @@
 # Python by Example, by Nichola Lacey
 # borrowed from library 2024.07.05
 
-# Chapter 5: For Loop
+# Chapter 6: While Loop
 
-print("Challenge 044")
-# Ask how many people the user wants to invite to a party. If they enter a number below 10,
-# ask for the names and after each name display "[name] has been invited." If they enter a
-# number which is 10 or higher, display the message "Too many people."
+print("Challenge 046")
 
-ppl = int(input("How many people do you want to invite to a party? "))
+# Ask the user to enter a number. Keep asking until they enter a value over 5
+# and then display the message "The last number you entered was a [number]"
+# and stop the program.
 
-if ppl < 10:
-    for i in range(0, ppl):
-        name = input("Enter a person's name: ")
-        print(name, "has been invited.\n")
-    print("Have fun at the party!!!")
-elif ppl >= 10:
-    print("Too many people.")
+num = 0
+while num <= 5:
+    num = int(input("Enter a number: "))
+print("The last number you entered was a", num)
