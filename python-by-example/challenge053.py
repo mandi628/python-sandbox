@@ -8,3 +8,7 @@
 print("Challenge 053")
 
 # Display a random fruit from a list of five fruits.
+
+import random
+fruit = ["apple", "banana", "pear", "cantaloupe", "orange"]
+print(random.choice(fruit))
