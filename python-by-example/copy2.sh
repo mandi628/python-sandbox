@@ -10,7 +10,7 @@ read newFile
 
 cp $oldFile ../../my_sandbox/bash/bash-by-example/$newFile.sh
 cp $oldFile ../../my_sandbox/ruby/ruby-by-example/$newFile.rb
-cp $oldFile ../../my_sandbox/js/js-by-example/$newFile.js
+cp $oldFile ../../js-sandbox/js-by-example/$newFile.js
 
 chmod +x $oldFile
 
