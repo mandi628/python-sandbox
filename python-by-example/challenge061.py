@@ -8,3 +8,13 @@
 print("Challenge 061")
 
 # Draw a triangle.
+
+import turtle
+
+turtle.shape("classic")
+
+for i in range(0,3):
+    turtle.forward(150)
+    turtle.left(120)
+
+turtle.exitonclick()

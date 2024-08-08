@@ -11,12 +11,23 @@ print("Challenge 060")
 
 # Draw a square.
 
-print("Example from book:")
+# Example from book
 
-turtle.shape("turtle")
+##turtle.shape("turtle")
+##
+##for i in range(0,10):
+##    turtle.right(36)
+##    for i in range(0,5):
+##        turtle.forward(100)
+##        turtle.right(72)
+##
+##turtle.exitonclick()
 
-for i in range(0,5):
-    turtle.forward(100)
-    turtle.right(72)
+import turtle
+
+for i in range(0,4):
+    turtle.forward(125)
+    turtle.left(90)
 
 turtle.exitonclick()
+
