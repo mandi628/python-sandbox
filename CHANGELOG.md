@@ -14,4 +14,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Removed
 
-## [M.m.p] - YYYY-MM-DD
+## [0.0.0] - 2025.01.31
+
+### Added
+
+- Moved W3 Schools python assignments to folder in this project.

@@ -1,5 +1,9 @@
 # README.md
 
+This is a dumping ground for my Python learning activities. I am determined to have a working knowledge of at least one language, and Python is my starting place.
+
+I have used Nano and Python 3.18 for these activities. I have not completed anything that required compiling yet, so I don't really know how to turn a code (or set of code files) into a standalone app yet. That is one of my goals. Any independent projects will have their own README and CHANGELOG files.
+
 (Introduction)
 
 Project Title: This is the name of the project. It describes the whole project in one sentence, and helps people understand what the main goal and aim of the project is.
